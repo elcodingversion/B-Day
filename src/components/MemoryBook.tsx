@@ -15,7 +15,7 @@ const DEFAULT_CHAPTERS: ChapterMemory[] = [
     subtitle: "Grateful for Your Bright Presence",
     description: "Every great story starts with a beautiful touch. Having you, Nadindra, in our lives has been the sweetest spark of happiness. Your grace changes ordinary moments into golden memories.",
     date: "The First Glimmer",
-    image: "", // Empty so it uses the beautiful fallback
+    image: "/pict/01.jpg",
     caption: "The beautiful spark of finding a kindred soul"
   },
   {
@@ -24,7 +24,7 @@ const DEFAULT_CHAPTERS: ChapterMemory[] = [
     subtitle: "Inside Jokes & Silly Times",
     description: "Silly inside jokes, late-night whispers, and fits of laughter that made our stomach ache. Your laugh is genuine medicine, carrying the warm brightness of a summer morning wherever you stroll.",
     date: "The Golden Hours",
-    image: "",
+    image: "/pict/02.png",
     caption: "Every chuckle is a star in our universe"
   },
   {
@@ -33,7 +33,7 @@ const DEFAULT_CHAPTERS: ChapterMemory[] = [
     subtitle: "Being Each Other's Anchor",
     description: "Shared dreams, silent support, and secrets guarded like old treasures. Through minor rainstorms and massive waves, realizing how strong we are when we build each other up.",
     date: "Midnight Whispers",
-    image: "",
+    image: "/pict/03.jpg",
     caption: "Anchored strongly in pure, quiet trust"
   },
   {
@@ -42,7 +42,7 @@ const DEFAULT_CHAPTERS: ChapterMemory[] = [
     subtitle: "Admiring Your Sincerity",
     description: "Your core is made of genuine purity, empathy, and sparkling charm. You have this magical ability to bring out the bright sunshine in other lives just by being unapologetically yourself.",
     date: "A Constant Light",
-    image: "",
+    image: "/pict/04.jpg",
     caption: "Shining bright with gentle grace"
   },
   {
@@ -51,7 +51,7 @@ const DEFAULT_CHAPTERS: ChapterMemory[] = [
     subtitle: "Welcome to Your XVII Blossom",
     description: "Here she stands: Chapter Seventeen! A new horizon filled with wild dreams, romantic songs, and boundless stars. May this chapter of your life be as breathtakingly beautiful as you are, Nadindra.",
     date: "June 27, 2026",
-    image: "",
+    image: "/pict/05.jpeg",
     caption: "Happy 17th Sweet Birthday on June 27th!"
   }
 ];
