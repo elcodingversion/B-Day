@@ -1,0 +1,6 @@
+{
+  "name": "Nadindra's Sweet Seventeen",
+  "description": "An interactive, floral, and romantic 17th birthday storytelling website for Nadindra, featuring interactive quizzes, floral animations, scrolling memories, and a virtual interactive gift box.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
