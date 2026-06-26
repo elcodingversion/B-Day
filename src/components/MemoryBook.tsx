@@ -13,7 +13,7 @@ const DEFAULT_CHAPTERS: ChapterMemory[] = [
     id: 'chapter1',
     title: "1. The Gentle Spark",
     subtitle: "Grateful for Your Bright Presence",
-    description: "Every great story starts with a beautiful touch. Having you, Nadindra, in our lives has been the sweetest spark of happiness. Your grace changes ordinary moments into golden memories.",
+    description: "It honestly feels like 2024 was just yesterday. Time flies, but I’m so incredibly happy and grateful that I got to know you. Hanging out with you is always such a blast, and to be honest, having you around really makes me feel like I’ve gained a younger sister.",
     date: "The First Glimmer",
     image: "/pict/01.jpg",
     caption: "The beautiful spark of finding a kindred soul"
@@ -22,7 +22,7 @@ const DEFAULT_CHAPTERS: ChapterMemory[] = [
     id: 'chapter2',
     title: "2. Echo of Laughters",
     subtitle: "Inside Jokes & Silly Times",
-    description: "Silly inside jokes, late-night whispers, and fits of laughter that made our stomach ache. Your laugh is genuine medicine, carrying the warm brightness of a summer morning wherever you stroll.",
+    description: "One of my favorite things about you is just how fun, vibrant, and enthusiastic you are. You have this amazing energy where we can literally talk about anything and everything—from the deepest conversations to the most random topics—and never run out of things to say.",
     date: "The Golden Hours",
     image: "/pict/02.png",
     caption: "Every chuckle is a star in our universe"
@@ -31,25 +31,25 @@ const DEFAULT_CHAPTERS: ChapterMemory[] = [
     id: 'chapter3',
     title: "3. Woven Dreams",
     subtitle: "Being Each Other's Anchor",
-    description: "Shared dreams, silent support, and secrets guarded like old treasures. Through minor rainstorms and massive waves, realizing how strong we are when we build each other up.",
+    description: "I genuinely feel so proud of you whenever I see how big and high your dreams are. It’s so inspiring to watch how hard you work and how much effort you put into making those dreams a reality. Keep chasing them, I'm always rooting for you.",
     date: "Midnight Whispers",
     image: "/pict/03.jpg",
     caption: "Anchored strongly in pure, quiet trust"
   },
   {
     id: 'chapter4',
-    title: "4. Your Bright Soul",
-    subtitle: "Admiring Your Sincerity",
-    description: "Your core is made of genuine purity, empathy, and sparkling charm. You have this magical ability to bring out the bright sunshine in other lives just by being unapologetically yourself.",
+    title: "4. Admiring Your Sincerity",
+    subtitle: "Your Bright Soul",
+    description: "Looking back at when we first met, I’m so amazed by how much you’ve grown. You’ve changed a lot and you're so much more mature now. It’s bittersweet, though—a part of me feels a bit sad realizing 'wow, you’re all grown up now,' even though we’re literally only one year apart.",
     date: "A Constant Light",
     image: "/pict/04.jpg",
     caption: "Shining bright with gentle grace"
   },
   {
     id: 'chapter5',
-    title: "5. Stepping into Sweet 17",
-    subtitle: "Welcome to Your XVII Blossom",
-    description: "Here she stands: Chapter Seventeen! A new horizon filled with wild dreams, romantic songs, and boundless stars. May this chapter of your life be as breathtakingly beautiful as you are, Nadindra.",
+    title: "5. Welcome to Your XVII Blossom",
+    subtitle: "Stepping into Sweet 17",
+    description: "Happy Sweet 17th, Nadindra! I hope your 17th year treats you as sweetly as you are. May you achieve everything your heart desires, always be surrounded by happiness, and be continuously blessed by Allah. Here's to becoming the absolute best version of yourself! But please promise me one thing—no matter how grown up you get, never change into a Nadin I don't recognize :D",
     date: "June 27, 2026",
     image: "/pict/05.jpeg",
     caption: "Happy 17th Sweet Birthday on June 27th!"
@@ -349,7 +349,7 @@ export default function MemoryBook({ isAdmin = false }: MemoryBookProps) {
 
   // Load custom chapters metadata and photos from localStorage on mount
   useEffect(() => {
-    const savedMeta = localStorage.getItem('nadindra_chapters_metadata');
+    const savedMeta = localStorage.getItem('nadindra_chapters_metadata_v2');
     let baseChapters = DEFAULT_CHAPTERS;
     if (savedMeta) {
       try {
@@ -387,7 +387,7 @@ export default function MemoryBook({ isAdmin = false }: MemoryBookProps) {
       const metaToSave = next.map(({ id, title, subtitle, description, date, caption }) => ({
         id, title, subtitle, description, date, caption
       }));
-      localStorage.setItem('nadindra_chapters_metadata', JSON.stringify(metaToSave));
+      localStorage.setItem('nadindra_chapters_metadata_v2', JSON.stringify(metaToSave));
       return next;
     });
   };

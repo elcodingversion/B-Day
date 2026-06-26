@@ -195,23 +195,24 @@ export default function BlossomBox({ customLetter, isAdmin = false }: BlossomBox
 
   const [letterContent, setLetterContent] = useState<string>(() => {
     if (customLetter) return customLetter;
-    return localStorage.getItem('nadindra_custom_letter_content') || `Dearest Nadindra,
+    return localStorage.getItem('nadindra_custom_letter_content_v2') || `Dearest Nadindra,
 
-Happy Sweet Seventeen! 🌸✨
+Happy Sweet Seventeen! 🌸<3
 
-Can you believe you are officially 17 today? June 27th marks the birth of an absolute beautiful, bright, and loving soul in this world. It is such an incredible joy to watch you bloom year after year, stepping into your dreams with grace, your warm contagious laugh, and a heart so pure it makes everyone around you feel incredibly blessed.
+Can you believe you are officially 17 today? June 27th marks the birth of an absolutely beautiful, bright, and loving soul in this world. It is such an incredible joy to watch you bloom year after year, stepping into your dreams with grace, your warm contagious laugh, and a heart so pure it makes everyone around you feel incredibly blessed.
 
-Seventeen is a magical year. It is the bridge where your wild, sweet childhood meet the first exciting steps of your independence. My deepest prayers for you are:
-- That your gentle smile never fades, even on cloudy days.
-- That your path is filled with loyal friends, warm memories, and brave adventures.
-- That you remain raw, honest, and as deeply precious as you are today.
+Seventeen is a magical year. It is the bridge where your wild, sweet childhood meets the first exciting steps of your independence. My deepest prayers for you are:
+
+-  That your gentle smile never fades, even on cloudy days.
+-  That your path is filled with loyal friends, warm memories, and brave adventures.
+-  That you remain raw, honest, and as deeply precious as you are today.
 
 Remember, you are stronger than you think, kinder than you know, and loved more than you can possibly imagine. Enjoy every waltz, every sunset, and every rose petal on this beautiful seventeenth waltz of yours.
 
 Wishing you a birthday as bright and beautiful as your soul. Happy 17th, Nadindra!
 
 With infinite warmth & love,
-Helma 💖`;
+Helma ❤️`;
   });
 
   return (
@@ -333,7 +334,7 @@ Helma 💖`;
             id="opened-gift-stage"
           >
             {/* Elegant Sticky Letter Board */}
-            <div className="bg-[#fffefe]/95 border-b-[6px] border-b-rose-100/50 border border-balance-border rounded-2xl shadow-xl p-5 md:p-8 relative overflow-visible w-full max-w-md mx-auto select-none" id="love-scroll-card-wrapper">
+            <div className="bg-[#fffefe]/95 border-b-[6px] border-b-rose-100/50 border border-balance-border rounded-2xl shadow-xl p-4.5 md:p-7 relative overflow-visible w-full max-w-xl mx-auto select-none" id="love-scroll-card-wrapper">
               
               {/* Retro masking tape aesthetic at top center */}
               <div 
@@ -367,14 +368,14 @@ Helma 💖`;
                     onChange={(e) => {
                       const val = e.target.value;
                       setLetterContent(val);
-                      localStorage.setItem('nadindra_custom_letter_content', val);
+                      localStorage.setItem('nadindra_custom_letter_content_v2', val);
                     }}
-                    className="w-full min-h-[300px] bg-pink-50/20 border border-dashed border-pink-200 focus:outline-none focus:ring-1 focus:ring-pink-300 rounded-xl p-3 font-handy text-slate-800 text-base md:text-lg leading-relaxed md:leading-loose text-left resize-y"
+                    className="w-full min-h-[300px] bg-pink-50/20 border border-dashed border-pink-200 focus:outline-none focus:ring-1 focus:ring-pink-300 rounded-xl p-3 font-handy text-slate-800 text-sm md:text-base leading-relaxed text-left resize-y"
                     placeholder="Custom Letter Content..."
                   />
                 </div>
               ) : (
-                <div className="whitespace-pre-line font-handy text-slate-800 text-base md:text-lg leading-relaxed md:leading-loose text-left select-none">
+                <div className="whitespace-pre-line font-handy text-slate-800 text-sm md:text-base leading-relaxed text-left select-none">
                   {letterContent}
                 </div>
               )}
